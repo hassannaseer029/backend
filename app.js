@@ -6,6 +6,7 @@ var logger = require('morgan');
 var customerRouter = require("./routes/customer")
 //KXSvar indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var venderRouter = require("./routes/vender");
 
 var app = express();
 
@@ -22,6 +23,7 @@ app.use(cookieParser());
 //app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/customer', customerRouter)
+app.use('/vender', venderRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
