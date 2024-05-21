@@ -1,9 +1,8 @@
 var express = require('express');
+const { createUser } = require('../controller/userController');
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('talha is sexy');
-});
+router.get('/createUser',createUser);
 
 module.exports = router;

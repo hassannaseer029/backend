@@ -1,4 +1,4 @@
-var express = require('express').Router();
+var router = require('express').Router();
 const { createVender } = require('../controller/venderController');
 // var router = express.Router() another way of calling router;
 
